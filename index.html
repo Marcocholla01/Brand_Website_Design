@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login page || Brand Designs</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="logo">
+                <img src="images/images/logo.svg" alt="">
+            </div>
+            <div class="image">
+
+            </div>
+            <div class="text">Start for free & get <br> 
+                attractive offers
+            </div>
+        </div>
+        <form id="form">
+            <div class="title">Get Started</div>
+
+            <!-- *! username input Here -->
+            <div>
+                <label for="username">User Name</label>
+                <i class="fa-solid fa-user nn-icon"></i>
+                <input type="text" name="username" id="username" placeholder="Input Your Username">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-user-check succes-icon"></i>
+                <div class="error"></div>
+
+            </div>
+            <!-- *! Email input Here -->
+            <div>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope nn-icon"></i>
+                <input type="email" name="email" id="email" placeholder="Input Your Email">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-envelope-circle-check succes-icon"></i>
+                <div class="error"></div>
+            </div>
+            <!-- *! Passord Input Here -->
+            <div>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock nn-icon"></i>
+                <input type="password" name="password" id="password" placeholder="Input Your Password">
+                <i class="fa-solid fa-triangle-exclamation failure-icon"></i>
+                <i class="fa-solid fa-unlock succes-icon"></i>
+                <div class="error"></div>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+            <div class="social">
+                <div class="question">
+                    <span><a href="#">forgot Password?</a></span>
+                    <div class="or">or</div>
+                    <div class="btn">
+                        <div class="btn-1">
+                            <img src="https://img.icons8.com/color/30/null/google-logo.png" />Continue with Google
+                        </div>
+                        <div class="btn-2">
+                            <img src="https://img.icons8.com/ios-filled/color/30/ffffff/facebook-new.png" />Continue with Facebook
+                        </div>
+                    </div>
+                </div>
+                <div class="social">
+                    <div class="question">Do not have an Account?
+                        <span><a href="./html/register.html">Sign In</a></span>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+
+
+
+    </div>
+
+</body>
+<script src="/js/login form validation.js"></script>
+
+</html>

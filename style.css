@@ -1,0 +1,215 @@
+/*? changing default style of browser*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 10px;
+    border-radius: 80px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+/*.style.rule.for.form.section*/
+form {
+    width: 45%;
+    /*max-width: 400px;*/
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form>div>input {
+    width: 100%;
+    border-radius: 8px;
+    height: 40px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form>div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input:focus {
+    border: 2px solid #f2796e;
+    box-shadow: 2px 2px 4px rgba(242, 121, 110, 0.8);
+}
+
+/** Style rules for social section**/
+.or {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+span,
+a {
+    color: #f2796e;
+    text-decoration: none;
+
+}
+
+.question {
+    font-size: 15px;
+    text-align: center;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+.btn-1:hover,
+.btn-2:hover{
+    cursor: pointer;
+}
+.btn-1,
+.btn-2 {
+    display: flex;
+    gap: 15px ;
+    justify-content: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 15px;
+    position: relative;
+    padding: 10px 5px;
+    align-items: center;
+}
+.btn-2{
+    background-color: #4f70b5;
+    color: #fff;
+}
+/*! style rules for the.content */
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f2796e;
+    width: 55%;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+.image{
+    background-image: url("./images/images/illustration.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    /*border: 2px solid black;*/
+    background-position: center;
+    height: 65%;
+    border-radius: 20px;
+} 
+.text{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+}
+ 
+
+/** Style rules for form icons **/
+
+form div i {
+    position: absolute;
+    padding: 10px;
+
+}
+
+.succes-icon,
+.failure-icon {
+    right: 0;
+    opacity: 0;
+}
+
+.succes-icon {
+    color: green;
+}
+
+.failure-icon,
+.error {
+    color: red;
+}
+
+.nn-icon {
+    color: #f2796e;
+}
+
+.error {
+    font-style: 14.5px;
+    margin-top: 5px;
+}
+
+/*! style rules for the button class */
+button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    color: #fff;
+    font-style: 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: all 0.1s ease;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+/*! Media Queries here */
+
+@media (max-width: 900px){
+    .container{
+        flex-direction: column;
+    }
+    form, .content{
+        width: 100%;
+    }
+    .btn{
+        flex-direction: row;
+    }
+    .image{
+        height: 70vh;
+    }
+    
+}
+@media (max-width:455px) {
+    .btn{
+        flex-direction: column;
+    }
+    .btn-1,
+    .btn-2{
+        gap: 15px;
+    }
+
+    form{
+        padding: 20px;
+    }
+}
